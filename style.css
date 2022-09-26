@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #000;
+    user-select: none;
+    font-family: system-ui;
+}
+
+.title {
+    border-left: 2px solid #00aaff;
+    border-bottom: 2px solid #00aaff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0px 25px 11px;
+    margin-bottom: 50px;
+    transition:all 250ms;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    padding: 10px 0 15px 15px;
+    background-color: #000d12;
+    box-shadow: -2px -1px 0px 1px #00aaff;
+    margin: 0;
+    border-radius: 25px;
+    transition: background 200ms;
+}
+
+p:hover {
+    background-color: #002d3a;
+}
+
+.allSelectors {
+    padding: 20px;
+    color: #fff;
+    background-color: #000d12;
+}
+
+.examles {
+    padding: 5px 0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #00aaff;
+    border-radius: 26px 0px 10px 10px;
+    border-left: 2px solid #00aaff;
+    border-right: 2px solid #00aaff;
+}
+
+pre {
+    color: darkorange;
+}
+
+.blue {
+    color: aqua;
+}
+
+.paleOrange {
+    color: #FFA25A;
+}

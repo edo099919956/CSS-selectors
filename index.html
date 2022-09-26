@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="allSelectors">
+        <div class="selectors">
+            <h1 class="title"></h1>
+            
+            <a href="https://www.w3schools.com/cssref/sel_class.asp"><p><span class="blue">class</span> = <span class="paleOrange">".name" </span>( Выбирает все элементы с class="name" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.name {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <p><span class="blue">class</span> = <span class="paleOrange">".name1 .name2" </span>( Выбирает все элементы с именами name1 и name2, установленными в атрибуте класса. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.name1 .name2 {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_id.asp"><p><span class="blue">#id</span> = <span class="paleOrange">"#firstname" </span>( Выбирает элемент с id="firstname" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">#firstname {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_all.asp"><p><span class="paleOrange">*</span> ( Выбирает все элементы )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">* {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_element.asp"><p><span class="paleOrange">p</span> ( Выбирает все элементы p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_element_comma.asp"><p><span class="paleOrange">h2, p</span> ( Выбирает все элементы h2 и все элементы p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">h2, p {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_element_element.asp"><p><span class="paleOrange">div p</span> ( Выбирает все элементы p внутри элементов div )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">div p {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_element_gt.asp"><p><span class="paleOrange">div > p</span> ( Выбирает все элементы p, где родителем является элемент div )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">div > p {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_element_pluss.asp"><p><span class="paleOrange">div + p</span> ( Выбирает первый элемент p, который помещается сразу после элементов div. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">div + p {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_gen_sibling.asp"><p><span class="paleOrange">p ~ ul</span> ( Выбирает каждый элемент ul, которому предшествует элемент p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p ~ ul {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+            <a href=""><p><span class="paleOrange">odd - even</span> ( Здесь мы указываем два разных цвета фона для нечетных и четных элементов p: )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-child(odd) {</span>
+        <span class="blue">background-color:</span> blue;
+    <span class="paleOrange">}</span>
+
+    <span class="paleOrange">p:nth-child(even) {</span>
+        <span class="blue">background-color:</span> red;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+            <a href=""><p><span class="paleOrange">p:nth-child(3n+0)</span> ( каждый 3й станет голубым )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-child(3n+0) {</span>
+        <span class="blue">background-color:</span> blue;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attribute.asp"><p><span class="paleOrange">[target]</span> ( Выбирает все элементы с целевым атрибутом )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a[target] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attribute_value.asp"><p><span class="paleOrange">a[target=_blank]</span> ( Выбирает все элементы с target="_blank" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a[target=_blank] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attribute_value_contains.asp"><p><span class="paleOrange">[title~=flower]</span> ( Выбирает все элементы с атрибутом title, содержащим слово «цветок». )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">[title~=flower] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attribute_value_lang.asp"><p><span class="paleOrange">[lang|=en]</span> ( Выбирает все элементы со значением атрибута lang, равным "en" или начинающимся с "en-" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">[lang|=en] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attr_begin.asp"><p><span class="paleOrange">a[href^="https"]</span> ( Выбирает каждый элемент a, значение атрибута href которого начинается с «https». )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a[href^="https"] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_attr_end.asp"><p><span class="paleOrange">a[href$=".pdf"]</span> ( Выбирает каждый элемент a, значение атрибута href которого заканчивается на «.pdf». )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a[href$=".pdf"] {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_active.asp"><p><span class="paleOrange">:active</span> ( Выбирает активную ссылку )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a:active {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_after.asp"><p><span class="paleOrange">p::after</span> ( Вставьте что-нибудь после содержимого каждого элемента p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p::after {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_before.asp"><p><span class="paleOrange">p::before</span> ( Вставьте что-нибудь перед содержимым каждого элемента p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p::before {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_checked.asp"><p><span class="paleOrange">input:checked</span> ( Выбирает каждый проверенный элемент input )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:checked {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_default.asp"><p><span class="paleOrange">input:default</span> ( Выбирает элемент input по умолчанию input )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">nput:default {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_disabled.asp"><p><span class="paleOrange">input[type="text"]:disabled</span> ( Выбирает каждый отключенный элемент input )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input[type="text"]:disabled {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_empty.asp"><p><span class="paleOrange">p:empty</span> ( Выбирает каждый отключенный элемент input )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:empty {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_enabled.asp"><p><span class="paleOrange">input[type="text"]:enabled</span> ( Выбирает каждый включенный элемент input )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input[type="text"]:enabled {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_firstchild.asp"><p><span class="paleOrange">p:first-child</span> ( Выбирает каждый элемент p, который является первым дочерним элементом своего родителя. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:first-child {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_firstletter.asp"><p><span class="paleOrange">p::first-letter</span> ( Выбирает первую букву каждого элемента )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p::first-letter {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_firstline.asp"><p><span class="paleOrange">p::first-line</span> ( Выбирает первую строку каждого элемента p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p::first-line {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_first-of-type.asp"><p><span class="paleOrange">p:first-of-type</span> ( Выбирает каждый элемент p, который является первым элементом p своего родителя. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:first-of-type {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_focus.asp"><p><span class="paleOrange">input:focus</span> ( Выбирает элемент ввода, который имеет фокус )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:focus {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_fullscreen.asp"><p><span class="paleOrange">:fullscreen</span> ( Выбирает элемент, который находится в полноэкранном режиме )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">:fullscreen {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_hover.asp"><p><span class="paleOrange">a:hover</span> ( Выбор ссылок при наведении курсора мыши )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a:hover {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_in-range.asp"><p><span class="paleOrange">input:in-range</span> ( Выбирает элементы ввода со значением в указанном диапазоне )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:in-range {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_indeterminate.asp"><p><span class="paleOrange">input:indeterminate</span> ( Выбирает входные элементы, которые находятся в неопределенном состоянии )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:indeterminate {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_invalid.asp"><p><span class="paleOrange">input:invalid</span> ( Выбирает все элементы ввода с недопустимым значением )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:invalid{</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_lang.asp"><p><span class="paleOrange">p:lang(it)</span> ( Выбирает каждый элемент p с атрибутом lang, равным «it» (итальянский) )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:lang(it) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_last-child.asp"><p><span class="paleOrange">p:last-child</span> ( Выбирает каждый элемент p, который является последним дочерним элементом его родителя )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:last-child {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_last-of-type.asp"><p><span class="paleOrange">p:last-of-type</span> ( Выбирает каждый элемент p, который является последним элементом p своего родителя )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:last-of-type {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_link.asp"><p><span class="paleOrange">a:link</span> ( Выбирает все непросмотренные ссылки )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a:link {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_marker.asp"><p><span class="paleOrange">::marker</span> ( Выбирает маркеры элементов списка )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">::marker {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_not.asp"><p><span class="paleOrange">:not(p)</span> ( Выбирает каждый элемент, который не является элементом p )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">:not(p) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_nth-child.asp"><p><span class="paleOrange">p:nth-child(2)</span> ( Выбирает каждый элемент p, который является вторым дочерним элементом своего родителя. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-child(2) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_nth-last-child.asp"><p><span class="paleOrange">p:nth-last-child(2)</span> ( Выбирает каждый элемент p, который является вторым дочерним элементом своего родителя, считая от последнего дочернего элемента. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-last-child(2) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_nth-last-of-type.asp"><p><span class="paleOrange">p:nth-last-of-type(2)</span> ( Выбирает каждый элемент p, который является вторым элементом p своего родителя, считая от последнего дочернего элемента. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-last-of-type(2) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_nth-of-type.asp"><p><span class="paleOrange">p:nth-of-type(2)</span> ( Выбирает каждый элемент p, который является вторым элементом p своего родителя. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:nth-of-type(2) {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_only-of-type.asp"><p><span class="paleOrange">p:only-of-type</span> ( Выбирает каждый элемент p, который является единственным элементом p своего родителя. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:only-of-type {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_only-child.asp"><p><span class="paleOrange">p:only-child</span> ( Выбирает каждый элемент p, который является единственным потомком своего родителя )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">p:only-child {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_optional.asp"><p><span class="paleOrange">input:optional</span> ( Выбирает элементы ввода без «обязательного» атрибута )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:optional {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_out-of-range.asp"><p><span class="paleOrange">input:out-of-range</span> ( Выбирает элементы ввода со значением вне указанного диапазона )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:out-of-range {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_placeholder.asp"><p><span class="paleOrange">input::placeholder</span> ( Выбирает элементы ввода с указанным атрибутом «заполнитель». )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input::placeholder {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_read-only.asp"><p><span class="paleOrange">input:read-only</span> ( Выбирает элементы ввода с указанным атрибутом "только для чтения" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:read-only {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_read-write.asp"><p><span class="paleOrange">input:read-write</span> ( Выбирает элементы ввода с НЕ указанным атрибутом "только для чтения" )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:read-write {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_required.asp"><p><span class="paleOrange">input:required</span> ( Выбирает элементы ввода с указанным атрибутом «обязательный». )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:required {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_root.asp"><p><span class="paleOrange">:root</span> ( Выбирает корневой элемент документа )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">:root{</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_selection.asp"><p><span class="paleOrange">::selection</span> ( Выбирает часть элемента, выбранную пользователем )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">::selection {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_target.asp"><p><span class="paleOrange">#news:target</span> ( Выбирает текущий активный элемент #news (нажатие на URL-адрес, содержащий это имя привязки) )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">#news:target {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_valid.asp"><p><span class="paleOrange">input:valid</span> ( Выбирает все элементы ввода с допустимым значением )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">input:valid {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/sel_visited.asp"><p><span class="paleOrange">a:visited</span> ( Выбирает все посещенные ссылки )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a:visited {</span>
+        <span class="blue">color:</span> red;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_attr.asp"><p><span class="paleOrange">attr()</span> ( Возвращает значение атрибута выбранного элемента )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">a:after {</span>
+        <span class="blue">content:</span> "(" attr(href) ")";
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_calc.asp"><p><span class="paleOrange">calc()</span> ( Позволяет выполнять вычисления для определения значений свойств CSS. )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">#div1 {</span>
+        <span class="blue">width:</span> calc(100% - 100px);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_conic-gradient.asp"><p><span class="paleOrange">conic-gradient()</span> ( Создает конический градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.grad {</span>
+        <span class="blue">background-image:</span> conic-gradient(red, yellow, green);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_counter.asp"><p><span class="paleOrange">counter()</span> ( Возвращает текущее значение именованного счетчика )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">h2::before {</span>
+        <span class="blue">counter-increment:</span> section;
+        <span class="blue">content:</span> "Section" counter(section) ":";
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_cubic-bezier.asp"><p><span class="paleOrange">cubic-bezier()</span> ( Определяет кубическую кривую Безье )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">width:</span> 100px;
+        <span class="blue">height:</span> 100px;
+        <span class="blue">background:</span> red;
+        <span class="blue">transition:</span> width 2s;
+        <span class="blue">transition-timing-function:</span> cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_hsl.asp"><p><span class="paleOrange">hsl()</span> ( Определяет цвета с помощью модели Hue-Saturation-Lightness (HSL). )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-color:</span> hsl(120,100%,50%);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_hsla.asp"><p><span class="paleOrange">hsla()</span> ( Определяет цвета с помощью модели Hue-Saturation-Lightness-Alpha (HSLA). )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-color:</span> hsla(120,100%,50%,0.3);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_linear-gradient.asp"><p><span class="paleOrange">linear-gradient()</span> ( Создает линейный градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-image:</span> linear-gradient(red, yellow, blue);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_max.asp"><p><span class="paleOrange">max()</span> ( Использует наибольшее значение из списка значений, разделенных запятыми, в качестве значения свойства )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">width:</span> max(50%, 300px);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_min.asp"><p><span class="paleOrange">min()</span> ( Использует наименьшее значение из списка значений, разделенных запятыми, в качестве значения свойства )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">width:</span> min(50%, 300px);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_radial-gradient.asp"><p><span class="paleOrange">radial-gradient()</span> ( Создает радиальный градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-color:</span> yellow;
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_repeating-conic-gradient.asp"><p><span class="paleOrange">repeating-conic-gradient()</span> ( Повторяет конический градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-image:</span> radial-gradient(red, green, blue);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_repeating-linear-gradient.asp"><p><span class="paleOrange">repeating-linear-gradient()</span> ( Повторяет линейный градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-image:</span> repeating-linear-gradient(red, yellow 10%, green 20%);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_repeating-radial-gradient.asp"><p><span class="paleOrange">repeating-radial-gradient()</span> ( Повторяет радиальный градиент )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-image:</span> repeating-radial-gradient(red, yellow 10%, green 15%);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_rgb.asp"><p><span class="paleOrange">rgb()</span> ( Определяет цвета с использованием модели «красный-зеленый-синий» (RGB). )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-color:</span> rgb(255,255,255);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_rgba.asp"><p><span class="paleOrange">rgba()</span> ( Определяет цвета с помощью модели Red-Green-Blue-Alpha (RGBA) )</p></a>
+            <div class="examles">
+<pre>
+    <span class="paleOrange">.container {</span>
+        <span class="blue">background-color:</span> rgba(255,255,255,0.3);
+    <span class="paleOrange">}</span>
+</pre>
+            </div>
+
+
+            <a href="https://www.w3schools.com/cssref/func_var.asp"><p><span class="paleOrange">var()</span> ( Вставляет значение пользовательского свойства )</p></a>
+        <div class="examles">
+<pre>
+    <span class="paleOrange">:root {</span>
+        <span class="blue">--my-color:</span> red;
+    <span class="paleOrange">}</span>
+
+    <span class="paleOrange">container1 {</span>
+        <span class="blue">background-color:</span> var(--my-color); 
+    <span class="paleOrange">}</span>
+</pre>
+        </div>
+        
+    </div>
+</div>
+</body>
+    <script src="script.js"></script>
+</html>
