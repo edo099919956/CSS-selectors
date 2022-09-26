@@ -12,7 +12,7 @@ body {
     display: inline-block;
     padding: 0px 25px 11px;
     margin-bottom: 50px;
-    transition:all 250ms;
+    transition: all 250ms;
 }
 
 a {
@@ -20,8 +20,8 @@ a {
     color: #fff;
 }
 
-p {
-    padding: 10px 0 15px 15px;
+.paragraps {
+    padding: 15px 10px 20px 15px;
     background-color: #000d12;
     box-shadow: -2px -1px 0px 1px #00aaff;
     margin: 0;
@@ -29,7 +29,7 @@ p {
     transition: background 200ms;
 }
 
-p:hover {
+.paragraps:hover {
     background-color: #002d3a;
 }
 
@@ -40,16 +40,21 @@ p:hover {
 }
 
 .examles {
-    padding: 5px 0;
+    padding: 10px 0 15px 20px;
     margin-bottom: 40px;
     border-bottom: 2px solid #00aaff;
     border-radius: 26px 0px 10px 10px;
     border-left: 2px solid #00aaff;
     border-right: 2px solid #00aaff;
+    color: darkorange;
 }
 
-pre {
-    color: darkorange;
+.block {
+    display: block;
+}
+
+.examles>p {
+    margin: 7px 0 7px 25px;
 }
 
 .blue {
